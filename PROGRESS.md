@@ -6,12 +6,18 @@
 - Backend S3 : terraform-backend-balde
 - Repo infra : https://github.com/nolse/projet_fil_rouge_infra
 
+## IPs (terraform output)
+- jenkins : 32.193.17.236
+- odoo     : 18.208.85.139
+- webapp   : 52.7.104.104
+
 ## Étapes
 - [x] Prérequis locaux
 - [x] Bucket S3 + versioning
 - [x] Git initialisé
-- [ ] Modules Terraform (security_group, ec2, ebs, eip)
-- [ ] terraform apply
-- [ ] Dockerisation app vitrine
-- [ ] Pipeline Jenkins
-- [ ] Kubernetes
+- [x] Modules Terraform (security_group, ec2, ebs, eip)
+- [x] terraform apply — 3 VMs opérationnelles
+- [x] SSH OK sur les 3 serveurs
+- [ ] Partie 1 : Conteneurisation app vitrine (Docker)
+- [ ] Partie 2 : Pipeline CI/CD Jenkins + Ansible
+- [ ] Partie 3 : Kubernetes
